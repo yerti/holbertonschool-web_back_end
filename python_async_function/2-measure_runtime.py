@@ -10,7 +10,7 @@ wait_n = __import__('1-concurrent_coroutines').wait_n
 def measure_time(n: int, max_delay: int) -> float:
     """returns the total time which is a float"""
     open_time = time.time()
-    asyncio.run(await_n(n, max_delay))
+    asyncio.run(wait_n(n, max_delay))
     end_time = time.time()
 
     total_time = end_time - open_time
