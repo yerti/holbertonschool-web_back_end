@@ -11,11 +11,10 @@ wait_random = __import__('0-basic_async_syntax').wait_random
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """Function that returns a list of loads
     depends on the number of arguments passed to us."""
-    delays = []
-    tasks = [wait_random(max_delay) for _ in range(n)]
+    list_floats = [wait_random(max_delay) for _ in range(n)]
 
-    for task in asyncio.as_completed(tasks):
-        result = await task
-        delays.append(result)
+    delays = [await i for i in asyncio.as_completed(list_floats)]
 
-    return sorted(delays)
+    sorted_list = sorted(delays)
+
+    return sorted_list
