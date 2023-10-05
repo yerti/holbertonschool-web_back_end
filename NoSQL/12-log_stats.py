@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Log stats"""
-from pymongo import MongoClient
-
+"""Python script that provides some stats about Nginx logs stored in MongoDB."""
+import pymongo
 
 if __name__ == "__main__":
     client = MongoClient('mongodb://localhost:27017')
@@ -27,3 +26,4 @@ if __name__ == "__main__":
     })
 
     print(f"{get_status} status check")
+
