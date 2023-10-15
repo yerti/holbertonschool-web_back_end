@@ -1,7 +1,7 @@
-import Currency from "./3-currency";
+
 
 export default class Pricing {
-  constructor(amount, currency){
+  constructor(amount, currency) {
     this._amount = amount;
     this._currency = currency;
   }
@@ -23,11 +23,15 @@ export default class Pricing {
 
   // Settter for currency
   set currency(newCurrency) {
-    this._currency = newCurrency
+    this._currency = newCurrency;
   }
 
   // The function should return the amount multiplied by the conversion rate
   displayFullPrice() {
     return `${this._amount} ${this._currency.name} (${this._currency.code})`;
+  }
+
+  static convertPrice(amount, conversionRate) {
+    return amount * conversionRate;
   }
 }
