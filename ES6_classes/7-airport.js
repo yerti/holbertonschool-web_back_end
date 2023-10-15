@@ -21,7 +21,7 @@ export default class Airport {
 
   // Setter for code
   set code(newCode) {
-    this._code = newCode
+    this._code = newCode;
   }
 
   toString() {
