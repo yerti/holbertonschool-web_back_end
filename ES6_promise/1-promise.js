@@ -1,7 +1,7 @@
 function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
     if (success) {
-      resolve({  // resolve the promise by passing an object with 2 attributes
+      resolve({ // resolve the promise by passing an object with 2 attributes
         status: 200,
         body: 'Success',
       });
