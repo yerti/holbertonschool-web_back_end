@@ -13,6 +13,6 @@ const asyncUploadUser = async () => {
   }
 
   return ({ photo, user });
-}
+};
 
 export default asyncUploadUser;
