@@ -1,5 +1,5 @@
 export default function guardrail(mathFunction) {
-  // function return an array 
+  // function return an array
   const queue = [];
   let result;
 
