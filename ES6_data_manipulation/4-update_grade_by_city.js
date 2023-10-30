@@ -1,5 +1,4 @@
-export default function updateStudentGradeByCity(students, city, newGrades) {
-  // returns an array of students for a specific city with their new grade
+const updateStudentGradeByCity = (students, city, newGrades) => {
   if (!Array.isArray(students) || !Array.isArray(newGrades)) {
     return [];
   }
@@ -18,5 +17,6 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
     });
 
   return studentByCity;
+};
 
-}
+export default updateStudentGradeByCity;
