@@ -1,5 +1,5 @@
 export default function groceriesList() {
-  const listFruitsfruits = new Map([
+  const listFruits = new Map([
     ['Apples', 10],
     ['Tomatoes', 10],
     ['Pasta', 1],
