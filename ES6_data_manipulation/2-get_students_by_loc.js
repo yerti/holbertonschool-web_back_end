@@ -4,5 +4,5 @@ export default function getStudentsByLocation(students, city) {
     (student) => student.location === city,
   );
 
-  return location
+  return location;
 }
