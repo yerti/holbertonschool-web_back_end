@@ -1,6 +1,6 @@
-const weakMap = new weakMap();
+const weakMap = new WeakMap();
 
-function queryAPI(endpoint) {
+const queryAPI = (endpoint) => {
   let times = weakMap.get(endpoint) || 0;
 
   times += 1;
@@ -12,6 +12,6 @@ function queryAPI(endpoint) {
   }
 
   return times;
-}
+};
 
-export { weakMap, queryAPI }
+export { weakMap, queryAPI };
